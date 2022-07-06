@@ -11,8 +11,17 @@ const edit = require('../actionsDiscord/edit.js');
 const action = require('../actionsDiscord/action.js');
 
 
+let hostName = "localhost"
+
+process.argv.forEach(function (val, index, array) {
+
+  if (index == 2 ){
+    hostName = val
+  }
+});
+
 var connection = mysql.createConnection({
-  host: 'localhost',
+  host: hostName,
   user: 'root',
   password: 'example',
   database: 'mysql'
