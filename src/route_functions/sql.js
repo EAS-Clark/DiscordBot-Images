@@ -7,7 +7,7 @@ const tags = require('../actionsDiscord/tags.js');
 const random = require('../actionsDiscord/random.js');
 const deletefun = require('../actionsDiscord/delete.js');
 const edit = require('../actionsDiscord/edit.js');
-const stats = require('../actionsDiscord/stats.js');
+//const stats = require('../actionsDiscord/stats.js');
 const action = require('../actionsDiscord/action.js');
 
 
@@ -66,7 +66,7 @@ exports.func = req => {
         break;
       case "stats":
 
-        stats(connection, params, resolve, reject);
+      //  stats(connection, params, resolve, reject);
 
         break;
       case "actions":

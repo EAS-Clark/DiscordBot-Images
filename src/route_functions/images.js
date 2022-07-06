@@ -5,7 +5,7 @@ const tags = require('../actionsUi/tags.js');
 const random = require('../actionsUi/random.js');
 const deletefun = require('../actionsUi/delete.js');
 const edit = require('../actionsUi/edit.js');
-const stats = require('../actionsUi/stats.js');
+//const stats = require('../actionsUi/stats.js');
 const action = require('../actionsUi/action.js');
 
 
@@ -50,7 +50,7 @@ exports.get = async req => {
                 break;
             case "stats":
 
-                stats(req, resolve, reject);
+              //  stats(req, resolve, reject);
 
                 break;
             case "action":
