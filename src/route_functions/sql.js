@@ -10,21 +10,11 @@ const edit = require('../actionsDiscord/edit.js');
 //const stats = require('../actionsDiscord/stats.js');
 const action = require('../actionsDiscord/action.js');
 
-
-let hostName = "localhost"
-
-process.argv.forEach(function (val, index, array) {
-
-  if (index == 2 ){
-    hostName = val
-  }
-});
-
 var connection = mysql.createConnection({
-  host: hostName,
-  user: 'root',
+  host: process.env.DB_HOST_NAME_ENV || 'localhost',
+  user: 'user',
   password: 'example',
-  database: 'mysql',
+  database: 'db',
   insecureAuth : true
 });
 
