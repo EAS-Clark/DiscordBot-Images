@@ -11,10 +11,10 @@ const edit = require('../actionsDiscord/edit.js');
 const action = require('../actionsDiscord/action.js');
 
 var connection = mysql.createConnection({
-  host: process.env.DB_HOST_NAME_ENV || 'localhost',
-  user: 'user',
-  password: 'example',
-  database: 'db',
+  host: process.env.DB_HOST || 'localhost',
+  HOST: process.env.DB_HOST || 'localhost',
+  USER: process.env.DB_USER || 'root',
+  PASSWORD: process.env.DB_PASSWORD || 'example',
   insecureAuth : true
 });
 

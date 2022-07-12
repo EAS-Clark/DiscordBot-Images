@@ -6,3 +6,4 @@ module.exports = {
         SCHEMA: process.env.DB_SCHEMA || 'mysql'
     }
 }
+
