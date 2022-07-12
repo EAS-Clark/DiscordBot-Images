@@ -24,7 +24,8 @@ var connection = mysql.createConnection({
   host: hostName,
   user: 'root',
   password: 'example',
-  database: 'mysql'
+  database: 'mysql',
+  insecureAuth : true
 });
 
 connection.connect();
